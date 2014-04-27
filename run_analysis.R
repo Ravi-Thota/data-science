@@ -23,7 +23,7 @@ newfeatures = gsub("\\(\\)", "", newfeatures)
 newfeatures = gsub("-", "_", newfeatures)
 
 featuremappings = data.frame(newfeatures,originalfeatures[featureswanted])
-write.csv(featuremappings, file="../feature_mappings.csv")
+write.csv(featuremappings, file="../feature_mappings.txt")
 
 # instead of reading all the dataset into memory,  filter in only the variables needed.
 # create a classes column to filter out the fields we are not interested in
@@ -69,4 +69,4 @@ result = aggregate(xdata, list(subject.group=xdata$subject, activity.group=xdata
 # subject.group and activity.group columns
 # There is probably a better way to do this.
 result = result[,c("subject.group", "activity.group", newfeatures)]
-write.csv(result, "../tidy_data.csv")
+write.csv(result, "../tidy_data.txt")

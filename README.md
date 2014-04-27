@@ -7,5 +7,5 @@ This script will download and unzip the original dataset from [here](https://d39
 
 This script does not require any inputs.  Running this script generates two files in the same folder as the run_analysis.R.  These files are in CSV format
 
-* **feature_mappings.csv** to map the features we are interested are mapped from the processed feature names to those in the original data
-* **tidy_data.csv** that contains the final tidy data
+* **feature_mappings.txt** to map the features we are interested are mapped from the processed feature names to those in the original data
+* **tidy_data.txt** that contains the final tidy data

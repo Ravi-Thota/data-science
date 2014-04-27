@@ -48,5 +48,5 @@ Reshaping the data
 * all measurements are summarized by their means by subject and activity using aggregate function
 
  
-This tidy data set is written back to a file **tidy_data.csv**
-This tidy data will have all the features listed in the feature_mappings.csv file and two columns "subject.group" and "activity.group"
+This tidy data set is written back to a file **tidy_data.txt**
+This tidy data will have all the features listed in the **feature_mappings.txt** file and two columns "subject.group" and "activity.group"
