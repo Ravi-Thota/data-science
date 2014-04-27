@@ -35,7 +35,7 @@ Reshaping the data
  * All hyphens are converted to underscores
  * A mapping file **feature_mappings.txt** is created to map the reshaped feature names to the featurenames from the original data set in CSV format
  
- ### Activities
+### Activities
 * activities are read in from **activity_labels.txt** as levels and labels to factorize the activity data in the observations
 
 ### Observations
@@ -46,7 +46,7 @@ Reshaping the data
 * traing and test are added as categories to preserve this information
 * both data sets are merged row wise using rbind
 * all measurements are summarized by their means by subject and activity using aggregate function
-* 
+
  
 This tidy data set is written back to a file **tidy_data.csv**
 This tidy data will have all the features listed in the feature_mappings.csv file and two columns "subject.group" and "activity.group"
